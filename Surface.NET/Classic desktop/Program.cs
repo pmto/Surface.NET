@@ -3,9 +3,11 @@
 // Cosmos Romantica (Александр Гелета) <mycatshoegazer@outlook.com>
 
 using System;
-using System.Diagnostics;
 using System.Windows.Forms;
+#if !DEBUG
+using System.Diagnostics;
 using SurfaceClassic.Properties;
+#endif
 
 namespace SurfaceClassic {
     internal static class Program {

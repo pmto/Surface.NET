@@ -19,11 +19,9 @@
 // DEVELOPER: MyCatShoegazer <mycatshoegazer@outlook.com>
 
 using System;
-using System.Windows.Forms;
-#if !DEBUG
 using System.Diagnostics;
+using System.Windows.Forms;
 using SurfaceClassic.Properties;
-#endif
 
 namespace SurfaceClassic {
     internal static class Program {
@@ -32,14 +30,15 @@ namespace SurfaceClassic {
         /// </summary>
         [STAThread]
         private static void Main() {
-#if DEBUG
-            Console.WriteLine($"{AppDomain.CurrentDomain.FriendlyName}: Started...");
-#else
             if (!EventLog.SourceExists(Settings.Default.AppName))
                 EventLog.CreateEventSource(Settings.Default.AppName, "Application");
 
             EventLog.WriteEntry(Settings.Default.AppName, "Started application", EventLogEntryType.Information);
-#endif
+
+            Application.ApplicationExit += (sender, args) => {
+                EventLog.WriteEntry(Settings.Default.AppName, "Application exited...", EventLogEntryType.Information);
+            };
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MDIMainForm());

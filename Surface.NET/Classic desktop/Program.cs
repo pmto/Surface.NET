@@ -26,17 +26,31 @@ using SurfaceClassic.Properties;
 namespace SurfaceClassic {
     internal static class Program {
         /// <summary>
-        ///     Главная точка входа для приложения.
+        ///     Application entry point.
         /// </summary>
         [STAThread]
         private static void Main() {
+            /*
+             * Here we need to determine existing of application registration
+             * in windows eventlog service.
+             */
             if (!EventLog.SourceExists(Settings.Default.AppName))
                 EventLog.CreateEventSource(Settings.Default.AppName, "Application");
 
-            EventLog.WriteEntry(Settings.Default.AppName, "Started application", EventLogEntryType.Information);
+            // Write application started to eventlog
+            EventLog.WriteEntry(
+                Settings.Default.AppName,
+                "Started application",
+                EventLogEntryType.Information
+            );
 
+            // Write application exited to eventlog
             Application.ApplicationExit += (sender, args) => {
-                EventLog.WriteEntry(Settings.Default.AppName, "Application exited...", EventLogEntryType.Information);
+                EventLog.WriteEntry(
+                    Settings.Default.AppName,
+                    "Application exited...",
+                    EventLogEntryType.Information
+                    );
             };
 
             Application.EnableVisualStyles();

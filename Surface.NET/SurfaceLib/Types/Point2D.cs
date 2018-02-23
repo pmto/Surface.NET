@@ -83,6 +83,14 @@ namespace SurfaceLib.Types {
             return this == (Point2D) obj;
         }
 
+        /// <summary>
+        ///     Represents current object as <see cref="string"/> like <code>"x,y"</code>.
+        /// </summary>
+        /// <returns>
+        ///     Returns <see cref="string"/> with <code>"x,y"</code> coordinates.
+        /// </returns>
+        public override string ToString() => $"{this.XAxis},{this.YAxis}";
+
         #endregion
 
         #region operators

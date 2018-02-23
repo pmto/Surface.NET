@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Surface.NET Classic", "Clas
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Installer", "Installer\Installer.vdproj", "{239CC58E-97DE-4666-96A9-8D1FC8356FDA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C7F26AA0-D482-415C-BC51-675366171CC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Surface.NET Library Tests", "Surface.NET Library Tests\Surface.NET Library Tests.csproj", "{D3FC6B4E-436F-4EBB-8CD5-F0BA3636FA7B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,12 +31,17 @@ Global
 		{0C67F299-BA26-459A-927A-67059440E47D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{239CC58E-97DE-4666-96A9-8D1FC8356FDA}.Debug|Any CPU.ActiveCfg = Debug
 		{239CC58E-97DE-4666-96A9-8D1FC8356FDA}.Release|Any CPU.ActiveCfg = Release
+		{D3FC6B4E-436F-4EBB-8CD5-F0BA3636FA7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3FC6B4E-436F-4EBB-8CD5-F0BA3636FA7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3FC6B4E-436F-4EBB-8CD5-F0BA3636FA7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3FC6B4E-436F-4EBB-8CD5-F0BA3636FA7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{0C67F299-BA26-459A-927A-67059440E47D} = {452D3060-4AF2-4318-8E59-9D586F6F06F5}
+		{D3FC6B4E-436F-4EBB-8CD5-F0BA3636FA7B} = {C7F26AA0-D482-415C-BC51-675366171CC8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1B7AC377-2275-4983-AD4A-B080F90B9F8E}

@@ -7,8 +7,8 @@ namespace Surface.NET_Library_Tests.Point2D {
         [TestCategory("Point2D Operators")]
         [TestMethod]
         public void OperatorEqualTest() {
-            var firstPoint = new SurfaceLib.Types.Point2D(2.3f, 1.5f);
-            var secondPoint = new SurfaceLib.Types.Point2D(2.3f, 1.5f);
+            var firstPoint = new SurfaceLib.Types.Point2D(2.3, 1.5);
+            var secondPoint = new SurfaceLib.Types.Point2D(2.3, 1.5);
             var actual = firstPoint == secondPoint;
 
             Assert.IsTrue(actual);
@@ -17,8 +17,8 @@ namespace Surface.NET_Library_Tests.Point2D {
         [TestCategory("Point2D Operators")]
         [TestMethod]
         public void OperatorNotEqualTest() {
-            var firstPoint = new SurfaceLib.Types.Point2D(2.6f, 1.3f);
-            var secondPoint = new SurfaceLib.Types.Point2D(0.4f, 1.4f);
+            var firstPoint = new SurfaceLib.Types.Point2D(2.6, 1.3);
+            var secondPoint = new SurfaceLib.Types.Point2D(0.4, 1.4);
             var actual = firstPoint != secondPoint;
 
             Assert.IsTrue(actual);

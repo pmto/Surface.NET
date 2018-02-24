@@ -7,7 +7,7 @@ namespace Surface.NET_Library_Tests.Point2D {
         [TestCategory("Point2D Overrides")]
         [TestMethod]
         public void GetHashCodeTest() {
-            var point = new SurfaceLib.Types.Point2D(2.0f, 3.2f);
+            var point = new SurfaceLib.Types.Point2D(2.0, 3.2);
             var expected = point.GetHashCode();
             var actual = point.GetHashCode();
             Assert.AreEqual(expected, actual);
@@ -16,8 +16,8 @@ namespace Surface.NET_Library_Tests.Point2D {
         [TestCategory("Point2D Overrides")]
         [TestMethod]
         public void EqualsTest() {
-            var firstPoint = new SurfaceLib.Types.Point2D(2.0f, 3.2f);
-            var secondPoint = new SurfaceLib.Types.Point2D(2.0f, 3.2f);
+            var firstPoint = new SurfaceLib.Types.Point2D(2.0, 3.2);
+            var secondPoint = new SurfaceLib.Types.Point2D(2.0, 3.2);
             var actual = firstPoint.Equals(secondPoint);
 
             Assert.IsTrue(actual);
@@ -26,8 +26,8 @@ namespace Surface.NET_Library_Tests.Point2D {
         [TestCategory("Point2D Overrides")]
         [TestMethod]
         public void NotEqualsTest() {
-            var firstPoint = new SurfaceLib.Types.Point2D(2.0f, 3.2f);
-            var secondPoint = new SurfaceLib.Types.Point2D(3.2f, 1.4f);
+            var firstPoint = new SurfaceLib.Types.Point2D(2.0, 3.2);
+            var secondPoint = new SurfaceLib.Types.Point2D(3.2, 1.4);
             var actual = firstPoint.Equals(secondPoint);
 
             Assert.IsFalse(actual);

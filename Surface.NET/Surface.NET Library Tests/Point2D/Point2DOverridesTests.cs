@@ -32,5 +32,17 @@ namespace Surface.NET_Library_Tests.Point2D {
 
             Assert.IsFalse(actual);
         }
+
+        [TestCategory("Point2D Overrides")]
+        [TestMethod]
+        public void ToStringTest() {
+            var x = 5.1;
+            var y = 4.3;
+            var point = new SurfaceLib.Types.Point2D(5.1, 4.3);
+            var expected = $"\"{x}\",\"{y}\"";
+            var actual = point.ToString();
+
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

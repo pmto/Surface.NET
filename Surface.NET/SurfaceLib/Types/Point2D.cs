@@ -84,12 +84,12 @@ namespace SurfaceLib.Types {
         }
 
         /// <summary>
-        ///     Represents current object as <see cref="string"/> like <code>"x,y"</code>.
+        ///     Represents current object as <see cref="string"/> like <code>""x","y""</code> as CSV line.
         /// </summary>
         /// <returns>
-        ///     Returns <see cref="string"/> with <code>"x,y"</code> coordinates.
+        ///     Returns <see cref="string"/> with <code>""x,y""</code> coordinates as CSV line.
         /// </returns>
-        public override string ToString() => $"{this.XAxis},{this.YAxis}";
+        public override string ToString() => $"\"{this.XAxis}\",\"{this.YAxis}\"";
 
         #endregion
 

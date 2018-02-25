@@ -19,6 +19,7 @@
 // DEVELOPER: MyCatShoegazer <mycatshoegazer@outlook.com>
 
 using System;
+using System.Globalization;
 
 #pragma warning disable 252,253
 
@@ -89,7 +90,12 @@ namespace SurfaceLib.Types {
         /// <returns>
         ///     Returns <see cref="string"/> with <code>""x,y""</code> coordinates as CSV line.
         /// </returns>
-        public override string ToString() => $"\"{this.XAxis}\",\"{this.YAxis}\"";
+        public override string ToString() {
+            var xString = this.XAxis.ToString(CultureInfo.InvariantCulture);
+            var yString = this.YAxis.ToString(CultureInfo.InvariantCulture);
+
+            return $"{xString},{yString}";
+        }
 
         #endregion
 

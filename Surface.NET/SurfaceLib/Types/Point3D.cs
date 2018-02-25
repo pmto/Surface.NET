@@ -19,6 +19,7 @@
 // DEVELOPER: MyCatShoegazer <mycatshoegazer@outlook.com>
 
 using System;
+using System.Globalization;
 
 namespace SurfaceLib.Types {
     /// <inheritdoc />
@@ -89,7 +90,7 @@ namespace SurfaceLib.Types {
         ///     Returns <see cref="T:System.String" /> with <code>""x,y""</code> coordinates as CSV line.
         /// </returns>
         public override string ToString() {
-            return $"{base.ToString()},\"{this.ZAxis}\"";
+            return $"{base.ToString()},{this.ZAxis.ToString(CultureInfo.InvariantCulture)}";
         }
 
         #endregion

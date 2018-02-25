@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Types\Point2D.cs" />
+    <Compile Include="Types\Point3D.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Filters\" />

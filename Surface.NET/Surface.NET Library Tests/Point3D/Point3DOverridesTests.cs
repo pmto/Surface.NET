@@ -36,7 +36,7 @@ namespace Surface.NET_Library_Tests.Point3D {
         [TestCategory("Point3D Overrides")]
         [TestMethod]
         public void ToStringTest() {
-            var expected = $"\"{this._point.XAxis}\",\"{this._point.YAxis}\",\"{this._point.ZAxis}\"";
+            var expected = $"3.2,5.1,4";
             var actual = this._point.ToString();
 
             Assert.AreEqual(expected, actual);

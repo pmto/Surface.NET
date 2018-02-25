@@ -35,7 +35,7 @@ namespace Surface.NET_Library_Tests.Point2D {
         [TestCategory("Point2D Overrides")]
         [TestMethod]
         public void ToStringTest() {
-            var expected = $"\"{this._point.XAxis}\",\"{this._point.YAxis}\"";
+            var expected = $"4,3.1";
             var actual = this._point.ToString();
 
             Assert.AreEqual(expected, actual);

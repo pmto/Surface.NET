@@ -51,6 +51,7 @@
     <Compile Include="Point2D\Point2DOverridesTests.cs" />
     <Compile Include="Point2D\Point2DOperatorsTests.cs" />
     <Compile Include="Point3D\Point3DOverridesTests.cs" />
+    <Compile Include="Point3D\Point3DOperatorsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

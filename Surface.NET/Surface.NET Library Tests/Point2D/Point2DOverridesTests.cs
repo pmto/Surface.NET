@@ -4,31 +4,30 @@ namespace Surface.NET_Library_Tests.Point2D {
     [TestCategory("Point2D Overrides")]
     [TestClass]
     public class Point2DOverridesTests {
+        private SurfaceLib.Types.Point2D _point;
+
+        [TestCategory("Point2D Overrides")]
+        [TestInitialize]
+        public void Initialize() {
+            this._point = new SurfaceLib.Types.Point2D(4, 3.1);
+        }
+
         [TestCategory("Point2D Overrides")]
         [TestMethod]
         public void GetHashCodeTest() {
-            var point = new SurfaceLib.Types.Point2D(2.0, 3.2);
-            var expected = point.GetHashCode();
-            var actual = point.GetHashCode();
+            var expected =
+                this._point.XAxis.GetHashCode() ^
+                this._point.YAxis.GetHashCode();
+            var actual = this._point.GetHashCode();
+
             Assert.AreEqual(expected, actual);
         }
 
         [TestCategory("Point2D Overrides")]
         [TestMethod]
         public void EqualsTest() {
-            var firstPoint = new SurfaceLib.Types.Point2D(2.0, 3.2);
-            var secondPoint = new SurfaceLib.Types.Point2D(2.0, 3.2);
-            var actual = firstPoint.Equals(secondPoint);
-
-            Assert.IsTrue(actual);
-        }
-
-        [TestCategory("Point2D Overrides")]
-        [TestMethod]
-        public void NotEqualsTest() {
-            var firstPoint = new SurfaceLib.Types.Point2D(2.0, 3.2);
-            var secondPoint = new SurfaceLib.Types.Point2D(3.2, 1.4);
-            var actual = firstPoint.Equals(secondPoint);
+            var temp = new SurfaceLib.Types.Point2D(2.0, 3.2);
+            var actual = this._point.Equals(temp);
 
             Assert.IsFalse(actual);
         }
@@ -36,11 +35,8 @@ namespace Surface.NET_Library_Tests.Point2D {
         [TestCategory("Point2D Overrides")]
         [TestMethod]
         public void ToStringTest() {
-            var x = 5.1;
-            var y = 4.3;
-            var point = new SurfaceLib.Types.Point2D(5.1, 4.3);
-            var expected = $"\"{x}\",\"{y}\"";
-            var actual = point.ToString();
+            var expected = $"\"{this._point.XAxis}\",\"{this._point.YAxis}\"";
+            var actual = this._point.ToString();
 
             Assert.AreEqual(expected, actual);
         }

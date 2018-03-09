@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Types\Edge.cs" />
     <Compile Include="Types\Point2D.cs" />
     <Compile Include="Types\Point3D.cs" />
     <Compile Include="Types\Triangle.cs" />

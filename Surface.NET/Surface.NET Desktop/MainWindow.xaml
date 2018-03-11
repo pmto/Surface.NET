@@ -27,7 +27,22 @@
             x:Name="SettingsFlyout" 
             Header="{x:Static localization:LocalizedStrings.SettingsFlyoutHeader}" 
             Position="Right">
-
+            <!-- Container -->
+            <Grid Margin="10 10 10 10">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="28px"/>
+                </Grid.RowDefinitions>
+                <!-- Footer -->
+                <StackPanel Grid.Row="1" Orientation="Horizontal">
+                    <!-- About program button -->
+                    <Button 
+                        x:Name="AboutProgramButton" 
+                        Content="{x:Static localization:LocalizedStrings.AboutProgramButtonContent}"
+                        Style="{DynamicResource SquareButtonStyle}"
+                    />
+                </StackPanel>
+            </Grid>
         </controls:Flyout>
     </controls:FlyoutsControl>
 

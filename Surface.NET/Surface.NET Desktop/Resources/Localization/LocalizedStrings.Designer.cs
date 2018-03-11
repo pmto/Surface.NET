@@ -61,6 +61,15 @@ namespace SurfaceDesktop.Resources.Localization {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на About program.
+        /// </summary>
+        public static string AboutProgramButtonContent {
+            get {
+                return ResourceManager.GetString("AboutProgramButtonContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на settings.
         /// </summary>
         public static string SettingsButtonContent {

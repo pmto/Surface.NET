@@ -59,5 +59,14 @@ namespace SurfaceDesktop.Resources.Localization {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на settings.
+        /// </summary>
+        public static string SettingsButtonContent {
+            get {
+                return ResourceManager.GetString("SettingsButtonContent", resourceCulture);
+            }
+        }
     }
 }

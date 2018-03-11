@@ -100,4 +100,7 @@
   <data name="SettingsButtonContent" xml:space="preserve">
     <value>settings</value>
   </data>
+  <data name="SettingsFlyoutHeader" xml:space="preserve">
+    <value>Settings</value>
+  </data>
 </root>

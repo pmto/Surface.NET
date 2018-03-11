@@ -100,4 +100,7 @@
   <data name="SettingsButtonContent" xml:space="preserve">
     <value>параметры</value>
   </data>
+  <data name="SettingsFlyoutHeader" xml:space="preserve">
+    <value>Параметры</value>
+  </data>
 </root>

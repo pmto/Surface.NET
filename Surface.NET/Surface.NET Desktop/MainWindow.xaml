@@ -23,7 +23,10 @@
     <!-- Window flyouts -->
     <controls:FlyoutsControl>
         <!-- Application settings flyout -->
-        <controls:Flyout x:Name="SettingsFlyout" Position="Right">
+        <controls:Flyout 
+            x:Name="SettingsFlyout" 
+            Header="{x:Static localization:LocalizedStrings.SettingsFlyoutHeader}" 
+            Position="Right">
 
         </controls:Flyout>
     </controls:FlyoutsControl>

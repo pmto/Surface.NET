@@ -25,5 +25,9 @@ namespace SurfaceDesktop
         {
             InitializeComponent();
         }
+
+        private void SettingsButton_OnClick(object sender, RoutedEventArgs e) {
+            this.SettingsFlyout.IsOpen = !this.SettingsFlyout.IsOpen;
+        }
     }
 }

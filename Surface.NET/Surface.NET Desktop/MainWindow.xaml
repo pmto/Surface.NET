@@ -11,8 +11,21 @@
     <!-- Title bar buttons -->
     <controls:MetroWindow.RightWindowCommands>
         <controls:WindowCommands>
-            <Button Content="{x:Static localization:LocalizedStrings.SettingsButtonContent}" />
+            <!-- Settings flyout opening button -->
+            <Button 
+                x:Name="SettingsButton"
+                Content="{x:Static localization:LocalizedStrings.SettingsButtonContent}"
+                Click="SettingsButton_OnClick"
+            />
         </controls:WindowCommands>
     </controls:MetroWindow.RightWindowCommands>
+
+    <!-- Window flyouts -->
+    <controls:FlyoutsControl>
+        <!-- Application settings flyout -->
+        <controls:Flyout x:Name="SettingsFlyout" Position="Right">
+
+        </controls:Flyout>
+    </controls:FlyoutsControl>
 
 </controls:MetroWindow>

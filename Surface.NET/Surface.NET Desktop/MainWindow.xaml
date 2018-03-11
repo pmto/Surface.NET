@@ -7,7 +7,12 @@
         xmlns:local="clr-namespace:SurfaceDesktop"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+    
+    <!-- Title bar buttons -->
+    <controls:MetroWindow.RightWindowCommands>
+        <controls:WindowCommands>
+            <Button Content="settings"/>
+        </controls:WindowCommands>
+    </controls:MetroWindow.RightWindowCommands>
+    
 </controls:MetroWindow>

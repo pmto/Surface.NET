@@ -33,6 +33,10 @@
                     <RowDefinition/>
                     <RowDefinition Height="28px"/>
                 </Grid.RowDefinitions>
+                <!-- Body -->
+                <StackPanel Grid.Row="0" Orientation="Vertical">
+                    
+                </StackPanel>
                 <!-- Footer -->
                 <StackPanel Grid.Row="1" Orientation="Horizontal">
                     <!-- About program button -->

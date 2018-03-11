@@ -19,11 +19,20 @@ namespace SurfaceDesktop
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : MetroWindow
-    {
+    public partial class MainWindow : MetroWindow {
+        public Dictionary<string, string> LocalesDictionary { get; set; }
+
         public MainWindow()
         {
-            InitializeComponent();
+            this.LocalesDictionary = new Dictionary<string, string> {
+                { "English", "en-US" },
+                { "Russian", "ru-RU" },
+                { "German", "de-DE" },
+                { "Korean (South)", "ko-KR" },
+                { "Ukranian", "uk-UA" }
+            };
+
+            this.InitializeComponent();
         }
 
         private void SettingsButton_OnClick(object sender, RoutedEventArgs e) {

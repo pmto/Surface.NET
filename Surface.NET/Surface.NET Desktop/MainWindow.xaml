@@ -5,7 +5,9 @@
                       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                       xmlns:localization="clr-namespace:SurfaceDesktop.Resources.Localization"
+                      xmlns:local ="clr-namespace:SurfaceDesktop"
                       mc:Ignorable="d"
+                      x:Name="MetroWindow"
         Title="Surface.NET" Height="350" Width="525">
 
     <!-- Title bar buttons -->
@@ -35,7 +37,11 @@
                 </Grid.RowDefinitions>
                 <!-- Body -->
                 <StackPanel Grid.Row="0" Orientation="Vertical">
-                    
+                    <!-- Language selector -->
+                    <controls:SplitButton
+                        ItemsSource="{Binding ElementName=MetroWindow, Path=LocalesDictionary}"
+                        DisplayMemberPath="Key"
+                    />
                 </StackPanel>
                 <!-- Footer -->
                 <StackPanel Grid.Row="1" Orientation="Horizontal">

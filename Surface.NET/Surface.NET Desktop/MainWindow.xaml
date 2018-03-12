@@ -47,7 +47,7 @@
                 <!-- Body -->
                 <StackPanel Grid.Row="0" Orientation="Vertical">
                     <!-- Appearance settings section header -->
-                    <TextBlock Text="{x:Static localization:LocalizedStrings.SettingsFlyoutAppearanceHeader}" FontSize="16"/>
+                    <TextBlock Text="{x:Static localization:LocalizedStrings.SettingsFlyoutAppearanceHeader}" FontSize="18"/>
                     <!-- Language settings -->
                     <StackPanel Orientation="Horizontal">
                         <!-- Language selector label -->
@@ -59,7 +59,16 @@
                             DisplayMemberPath="Key"
                             HorizontalContentAlignment="Left"
                             Margin="10 0 0 0"
+                            BorderThickness="0"
                             SelectionChanged="LanguageSplitButton_OnSelectionChanged"
+                        />
+                        <!-- Flyout theme selector -->
+                        <controls:SplitButton
+                            ItemsSource="{Binding ElementName=MetroWindow, Path=FlyoutThemes}"
+                            SelectedItem="{Binding Source={x:Static props:Settings.Default}, Path=FlyoutsTheme, Mode=TwoWay}"
+                            HorizontalContentAlignment="Left"
+                            Margin="10 0 0 0"
+                            BorderThickness="0"
                         />
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
@@ -70,18 +79,7 @@
                             OnLabel="{x:Static localization:LocalizedStrings.ThemeToggleSwitchOn}"
                             OffLabel="{x:Static localization:LocalizedStrings.ThemeToggleSwitchOff}"
                             IsChecked="{Binding Source={x:Static props:Settings.Default}, Path=ApplicationDarkTheme, Mode=TwoWay}"
-                        />
-                    </StackPanel>
-                    <!-- Flyout theme settings -->
-                    <StackPanel Orientation="Horizontal">
-                        <!-- Flyout theme selector label -->
-                        <TextBlock Text="{x:Static localization:LocalizedStrings.FlyoutThemeSelectorLabel}" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-                        <!-- Flyout theme selector -->
-                        <controls:SplitButton
-                            ItemsSource="{Binding ElementName=MetroWindow, Path=FlyoutThemes}"
-                            SelectedItem="{Binding Source={x:Static props:Settings.Default}, Path=FlyoutsTheme, Mode=TwoWay}"
-                            HorizontalContentAlignment="Left"
-                            Margin="10 0 0 0"
+                            VerticalAlignment="Bottom"
                         />
                     </StackPanel>
                 </StackPanel>

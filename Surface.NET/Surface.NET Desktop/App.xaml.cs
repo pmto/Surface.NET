@@ -6,6 +6,8 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
+using SurfaceDesktop.Properties;
+using SurfaceDesktop.Resources.Localization;
 
 namespace Surface.NET_Desktop
 {
@@ -14,6 +16,15 @@ namespace Surface.NET_Desktop
     /// </summary>
     public partial class App : Application
     {
-        
+        private void App_OnExit(object sender, ExitEventArgs e) {
+            try {
+                Settings.Default.Save();
+            }
+            catch (Exception) {
+                MessageBox.Show(LocalizedStrings.ApplicationSaveSettingsErrorMessageText,
+                    LocalizedStrings.ApplicationSaveSettingsErrorMessageTitle, MessageBoxButton.OK,
+                    MessageBoxImage.Error);
+            }
+        }
     }
 }

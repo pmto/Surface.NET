@@ -97,7 +97,6 @@ namespace SurfaceDesktop {
                  * Then saving application settings.
                  */
                 Settings.Default.CurrentLocale = value;
-                Settings.Default.Save();
 
                 /*
                  * Here we asking user to accept restarting of application

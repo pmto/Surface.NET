@@ -17,5 +17,8 @@
     <Setting Name="FlyoutsTheme" Type="MahApps.Metro.Controls.FlyoutTheme" Scope="User">
       <Value Profile="(Default)">Adapt</Value>
     </Setting>
+    <Setting Name="ApplicationDarkTheme" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

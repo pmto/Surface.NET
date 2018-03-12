@@ -69,6 +69,7 @@
                             Header="{x:Static localization:LocalizedStrings.ThemeSelectorLabel}"
                             OnLabel="{x:Static localization:LocalizedStrings.ThemeToggleSwitchOn}"
                             OffLabel="{x:Static localization:LocalizedStrings.ThemeToggleSwitchOff}"
+                            IsChecked="{Binding Source={x:Static props:Settings.Default}, Path=ApplicationDarkTheme, Mode=TwoWay}"
                         />
                     </StackPanel>
                     <!-- Flyout theme settings -->

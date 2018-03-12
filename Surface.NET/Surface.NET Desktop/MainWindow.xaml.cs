@@ -31,6 +31,9 @@ namespace SurfaceDesktop {
                 {"Ukranian", "uk-UA"}
             };
 
+            /*
+             * Fill this collection with flyout supported themes.
+             */
             this.FlyoutThemes = new ObservableCollection<FlyoutTheme> {
                 FlyoutTheme.Adapt,
                 FlyoutTheme.Accent,
@@ -68,6 +71,9 @@ namespace SurfaceDesktop {
         /// </summary>
         public Dictionary<string, string> LocalesDictionary { get; set; }
 
+        /// <summary>
+        ///     Contains flyout themes variations.
+        /// </summary>
         public ObservableCollection<FlyoutTheme> FlyoutThemes { get; set; }
 
         #endregion

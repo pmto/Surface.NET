@@ -82,5 +82,17 @@ namespace SurfaceDesktop.Properties {
                 this["FlyoutsTheme"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool ApplicationDarkTheme {
+            get {
+                return ((bool)(this["ApplicationDarkTheme"]));
+            }
+            set {
+                this["ApplicationDarkTheme"] = value;
+            }
+        }
     }
 }

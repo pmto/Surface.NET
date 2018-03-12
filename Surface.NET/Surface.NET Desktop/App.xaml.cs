@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows;
+using MahApps.Metro;
 using SurfaceDesktop.Properties;
 using SurfaceDesktop.Resources.Localization;
 
@@ -36,6 +37,17 @@ namespace SurfaceDesktop {
         }
 
         /// <summary>
+        ///     Changes application theme style from settings.
+        /// </summary>
+        private static void ApplyTheme() {
+            var appStyle = ThemeManager.DetectAppStyle(Application.Current);
+            ThemeManager.ChangeAppStyle(Application.Current, appStyle.Item2,
+                Settings.Default.ApplicationDarkTheme
+                    ? ThemeManager.GetAppTheme("BaseDark")
+                    : ThemeManager.GetAppTheme("BaseLight"));
+        }
+
+        /// <summary>
         ///     Rises when application starting.
         /// </summary>
         private void App_OnStartup(object sender, StartupEventArgs e) {
@@ -44,6 +56,9 @@ namespace SurfaceDesktop {
              * which rises when settings changed.
              */
             Settings.Default.PropertyChanged += (o, args) => {
+                // Change app theme
+                ApplyTheme();
+
                 // Saving changes
                 SaveSettings();
             };

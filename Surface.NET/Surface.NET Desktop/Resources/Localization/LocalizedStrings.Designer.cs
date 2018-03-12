@@ -108,6 +108,24 @@ namespace SurfaceDesktop.Resources.Localization {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Panel theme.
+        /// </summary>
+        public static string FlyoutThemeSelectorLabel {
+            get {
+                return ResourceManager.GetString("FlyoutThemeSelectorLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Language.
+        /// </summary>
+        public static string LanguageSelectorLabel {
+            get {
+                return ResourceManager.GetString("LanguageSelectorLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на settings.
         /// </summary>
         public static string SettingsButtonContent {
@@ -131,6 +149,33 @@ namespace SurfaceDesktop.Resources.Localization {
         public static string SettingsFlyoutHeader {
             get {
                 return ResourceManager.GetString("SettingsFlyoutHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Theme.
+        /// </summary>
+        public static string ThemeSelectorLabel {
+            get {
+                return ResourceManager.GetString("ThemeSelectorLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Light.
+        /// </summary>
+        public static string ThemeToggleSwitchOff {
+            get {
+                return ResourceManager.GetString("ThemeToggleSwitchOff", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Dark.
+        /// </summary>
+        public static string ThemeToggleSwitchOn {
+            get {
+                return ResourceManager.GetString("ThemeToggleSwitchOn", resourceCulture);
             }
         }
     }

@@ -70,5 +70,29 @@ namespace SurfaceDesktop.Properties {
                 this["MainWindowState"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Adapt")]
+        public global::MahApps.Metro.Controls.FlyoutTheme FlyoutsTheme {
+            get {
+                return ((global::MahApps.Metro.Controls.FlyoutTheme)(this["FlyoutsTheme"]));
+            }
+            set {
+                this["FlyoutsTheme"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool ApplicationDarkTheme {
+            get {
+                return ((bool)(this["ApplicationDarkTheme"]));
+            }
+            set {
+                this["ApplicationDarkTheme"] = value;
+            }
+        }
     }
 }

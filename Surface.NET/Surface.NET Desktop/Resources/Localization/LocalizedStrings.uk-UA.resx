@@ -122,4 +122,19 @@
   <data name="SettingsFlyoutAppearanceHeader" xml:space="preserve">
     <value>Зовнішній вигляд</value>
   </data>
+  <data name="LanguageSelectorLabel" xml:space="preserve">
+    <value>Мова</value>
+  </data>
+  <data name="FlyoutThemeSelectorLabel" xml:space="preserve">
+    <value>Тема</value>
+  </data>
+  <data name="ThemeSelectorLabel" xml:space="preserve">
+    <value>Тема</value>
+  </data>
+  <data name="ThemeToggleSwitchOn" xml:space="preserve">
+    <value>Темний</value>
+  </data>
+  <data name="ThemeToggleSwitchOff" xml:space="preserve">
+    <value>Світлий</value>
+  </data>
 </root>

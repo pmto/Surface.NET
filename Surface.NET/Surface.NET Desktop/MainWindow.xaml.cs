@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
@@ -31,6 +32,17 @@ namespace SurfaceDesktop {
             };
 
             /*
+             * Fill this collection with flyout supported themes.
+             */
+            this.FlyoutThemes = new ObservableCollection<FlyoutTheme> {
+                FlyoutTheme.Adapt,
+                FlyoutTheme.Accent,
+                FlyoutTheme.Dark,
+                FlyoutTheme.Light,
+                FlyoutTheme.Inverse
+            };
+
+            /*
              * Applying application ui locale from saved instance in project settings.
              * It is important to do this before initializing component!
              */
@@ -58,6 +70,11 @@ namespace SurfaceDesktop {
         ///     </para>
         /// </summary>
         public Dictionary<string, string> LocalesDictionary { get; set; }
+
+        /// <summary>
+        ///     Contains flyout themes variations.
+        /// </summary>
+        public ObservableCollection<FlyoutTheme> FlyoutThemes { get; set; }
 
         #endregion
 

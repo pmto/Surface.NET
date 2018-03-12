@@ -122,4 +122,19 @@
   <data name="SettingsFlyoutAppearanceHeader" xml:space="preserve">
     <value>모양</value>
   </data>
+  <data name="LanguageSelectorLabel" xml:space="preserve">
+    <value>언어</value>
+  </data>
+  <data name="FlyoutThemeSelectorLabel" xml:space="preserve">
+    <value>테마</value>
+  </data>
+  <data name="ThemeSelectorLabel" xml:space="preserve">
+    <value>테마</value>
+  </data>
+  <data name="ThemeToggleSwitchOn" xml:space="preserve">
+    <value>어둡게</value>
+  </data>
+  <data name="ThemeToggleSwitchOff" xml:space="preserve">
+    <value>약간 가늘게</value>
+  </data>
 </root>

@@ -33,6 +33,6 @@ using System.Runtime.InteropServices;
 // используя "*", как показано ниже:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyFileVersion("2018.3.6.2037")]
+[assembly: AssemblyFileVersion("2018.3.7.1023")]
 
-[assembly: AssemblyInformationalVersion("1.0.6")]
+[assembly: AssemblyInformationalVersion("1.0.7")]

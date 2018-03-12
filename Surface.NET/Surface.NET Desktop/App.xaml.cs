@@ -40,7 +40,13 @@ namespace SurfaceDesktop {
         ///     Changes application theme style from settings.
         /// </summary>
         private static void ApplyTheme() {
+            // Getting current application loaded theme
             var appStyle = ThemeManager.DetectAppStyle(Application.Current);
+            
+            /*
+             * Changing application theme to dark if true
+             * and to light if false.
+             */
             ThemeManager.ChangeAppStyle(Application.Current, appStyle.Item2,
                 Settings.Default.ApplicationDarkTheme
                     ? ThemeManager.GetAppTheme("BaseDark")

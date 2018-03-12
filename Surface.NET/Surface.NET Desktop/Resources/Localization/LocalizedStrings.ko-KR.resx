@@ -128,4 +128,13 @@
   <data name="FlyoutThemeSelectorLabel" xml:space="preserve">
     <value>테마</value>
   </data>
+  <data name="ThemeSelectorLabel" xml:space="preserve">
+    <value>테마</value>
+  </data>
+  <data name="ThemeToggleSwitchOn" xml:space="preserve">
+    <value>어둡게</value>
+  </data>
+  <data name="ThemeToggleSwitchOff" xml:space="preserve">
+    <value>약간 가늘게</value>
+  </data>
 </root>

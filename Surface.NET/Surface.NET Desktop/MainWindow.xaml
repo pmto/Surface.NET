@@ -62,6 +62,15 @@
                             SelectionChanged="LanguageSplitButton_OnSelectionChanged"
                         />
                     </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <!-- Theme selector -->
+                        <controls:ToggleSwitch
+                            x:Name="ThemeToggleSwitch"
+                            Header="{x:Static localization:LocalizedStrings.ThemeSelectorLabel}"
+                            OnLabel="{x:Static localization:LocalizedStrings.ThemeToggleSwitchOn}"
+                            OffLabel="{x:Static localization:LocalizedStrings.ThemeToggleSwitchOff}"
+                        />
+                    </StackPanel>
                     <!-- Flyout theme settings -->
                     <StackPanel Orientation="Horizontal">
                         <!-- Flyout theme selector label -->

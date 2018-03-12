@@ -129,4 +129,13 @@ Please, try again.</value>
   <data name="FlyoutThemeSelectorLabel" xml:space="preserve">
     <value>Panel theme</value>
   </data>
+  <data name="ThemeSelectorLabel" xml:space="preserve">
+    <value>Theme</value>
+  </data>
+  <data name="ThemeToggleSwitchOn" xml:space="preserve">
+    <value>Dark</value>
+  </data>
+  <data name="ThemeToggleSwitchOff" xml:space="preserve">
+    <value>Light</value>
+  </data>
 </root>

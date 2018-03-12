@@ -151,5 +151,32 @@ namespace SurfaceDesktop.Resources.Localization {
                 return ResourceManager.GetString("SettingsFlyoutHeader", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Theme.
+        /// </summary>
+        public static string ThemeSelectorLabel {
+            get {
+                return ResourceManager.GetString("ThemeSelectorLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Light.
+        /// </summary>
+        public static string ThemeToggleSwitchOff {
+            get {
+                return ResourceManager.GetString("ThemeToggleSwitchOff", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Dark.
+        /// </summary>
+        public static string ThemeToggleSwitchOn {
+            get {
+                return ResourceManager.GetString("ThemeToggleSwitchOn", resourceCulture);
+            }
+        }
     }
 }

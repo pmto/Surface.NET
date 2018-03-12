@@ -129,4 +129,13 @@
   <data name="FlyoutThemeSelectorLabel" xml:space="preserve">
     <value>Тема панели</value>
   </data>
+  <data name="ThemeSelectorLabel" xml:space="preserve">
+    <value>Тема</value>
+  </data>
+  <data name="ThemeToggleSwitchOn" xml:space="preserve">
+    <value>Тёмная</value>
+  </data>
+  <data name="ThemeToggleSwitchOff" xml:space="preserve">
+    <value>Светлая</value>
+  </data>
 </root>

@@ -128,4 +128,13 @@ Bitte versuchen Sie es erneut.!</value>
   <data name="FlyoutThemeSelectorLabel" xml:space="preserve">
     <value>Panel Thema!</value>
   </data>
+  <data name="ThemeSelectorLabel" xml:space="preserve">
+    <value>Design</value>
+  </data>
+  <data name="ThemeToggleSwitchOn" xml:space="preserve">
+    <value>Dunkel</value>
+  </data>
+  <data name="ThemeToggleSwitchOff" xml:space="preserve">
+    <value>Dünn</value>
+  </data>
 </root>

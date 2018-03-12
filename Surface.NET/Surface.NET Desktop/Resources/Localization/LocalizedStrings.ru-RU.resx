@@ -110,8 +110,8 @@
     <value>Настройки программы</value>
   </data>
   <data name="ApplicationRestartMessageText" xml:space="preserve">
-    <value>Настройки программы были изменены.
-Приложение требуется перезапустить.</value>
+    <value>Параметры приложения были изменены.
+Для вступления изменений в силу приложение требуется перезапустить.</value>
   </data>
   <data name="ApplicationSaveSettingsErrorMessageTitle" xml:space="preserve">
     <value>Ошибка при сохранении настроек</value>

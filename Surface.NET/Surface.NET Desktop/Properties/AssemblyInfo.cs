@@ -10,10 +10,10 @@ using System.Windows;
 [assembly: AssemblyTitle("Surface.NET Desktop")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("nullapps")]
 [assembly: AssemblyProduct("Surface.NET Desktop")]
-[assembly: AssemblyCopyright("Copyright ©  2018")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCopyright("Copyright © MyCatShoegazer 2018")]
+[assembly: AssemblyTrademark("nullapps Surface.NET")]
 [assembly: AssemblyCulture("")]
 
 // Установка значения False для параметра ComVisible делает типы в этой сборке невидимыми
@@ -55,3 +55,5 @@ using System.Windows;
 [assembly: AssemblyFileVersion("2018.3.47.1023")]
 
 [assembly: AssemblyInformationalVersion("2018.3.48")]
+[assembly: NeutralResourcesLanguage("en-US")]
+

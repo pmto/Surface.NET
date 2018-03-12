@@ -125,9 +125,6 @@ Bitte versuchen Sie es erneut.!</value>
   <data name="LanguageSelectorLabel" xml:space="preserve">
     <value>Sprache</value>
   </data>
-  <data name="FlyoutThemeSelectorLabel" xml:space="preserve">
-    <value>Panel Thema!</value>
-  </data>
   <data name="ThemeSelectorLabel" xml:space="preserve">
     <value>Design</value>
   </data>

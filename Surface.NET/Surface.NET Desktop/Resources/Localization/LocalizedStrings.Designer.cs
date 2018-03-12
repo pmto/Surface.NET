@@ -108,15 +108,6 @@ namespace SurfaceDesktop.Resources.Localization {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Panel theme.
-        /// </summary>
-        public static string FlyoutThemeSelectorLabel {
-            get {
-                return ResourceManager.GetString("FlyoutThemeSelectorLabel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Ищет локализованную строку, похожую на Language.
         /// </summary>
         public static string LanguageSelectorLabel {

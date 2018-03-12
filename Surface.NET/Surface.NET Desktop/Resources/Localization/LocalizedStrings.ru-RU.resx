@@ -126,9 +126,6 @@
   <data name="LanguageSelectorLabel" xml:space="preserve">
     <value>Язык</value>
   </data>
-  <data name="FlyoutThemeSelectorLabel" xml:space="preserve">
-    <value>Тема панели</value>
-  </data>
   <data name="ThemeSelectorLabel" xml:space="preserve">
     <value>Тема</value>
   </data>

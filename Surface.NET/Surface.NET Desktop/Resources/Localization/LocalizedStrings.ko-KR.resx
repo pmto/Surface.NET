@@ -125,9 +125,6 @@
   <data name="LanguageSelectorLabel" xml:space="preserve">
     <value>언어</value>
   </data>
-  <data name="FlyoutThemeSelectorLabel" xml:space="preserve">
-    <value>테마</value>
-  </data>
   <data name="ThemeSelectorLabel" xml:space="preserve">
     <value>테마</value>
   </data>

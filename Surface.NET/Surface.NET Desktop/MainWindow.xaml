@@ -36,6 +36,7 @@
             Header="{x:Static localization:LocalizedStrings.SettingsFlyoutHeader}" 
             Position="Right"
             Width="250"
+            Theme="{Binding Source={x:Static props:Settings.Default}, Path=FlyoutsTheme, Mode=TwoWay}"
         >
             <!-- Container -->
             <Grid Margin="10 10 10 10">

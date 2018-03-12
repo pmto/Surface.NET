@@ -39,8 +39,10 @@
                 <StackPanel Grid.Row="0" Orientation="Vertical">
                     <!-- Language selector -->
                     <controls:SplitButton
+                        x:Name="LanguageSplitButton"
                         ItemsSource="{Binding ElementName=MetroWindow, Path=LocalesDictionary}"
                         DisplayMemberPath="Key"
+                        SelectionChanged="LanguageSplitButton_OnSelectionChanged"
                     />
                 </StackPanel>
                 <!-- Footer -->

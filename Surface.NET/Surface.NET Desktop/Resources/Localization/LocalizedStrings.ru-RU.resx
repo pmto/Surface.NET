@@ -106,4 +106,18 @@
   <data name="AboutProgramButtonContent" xml:space="preserve">
     <value>О программе</value>
   </data>
+  <data name="ApplicationRestartMessageTitle" xml:space="preserve">
+    <value>Настройки программы</value>
+  </data>
+  <data name="ApplicationRestartMessageText" xml:space="preserve">
+    <value>Настройки программы были изменены.
+Приложение требуется перезапустить.</value>
+  </data>
+  <data name="ApplicationSaveSettingsErrorMessageTitle" xml:space="preserve">
+    <value>Ошибка при сохранении настроек</value>
+  </data>
+  <data name="ApplicationSaveSettingsErrorMessageText" xml:space="preserve">
+    <value>Ошибка при сохранении настроек программы.
+Пожалуйста, повторите.</value>
+  </data>
 </root>

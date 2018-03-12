@@ -106,4 +106,18 @@
   <data name="AboutProgramButtonContent" xml:space="preserve">
     <value>About program</value>
   </data>
+  <data name="ApplicationRestartMessageTitle" xml:space="preserve">
+    <value>Application settings</value>
+  </data>
+  <data name="ApplicationRestartMessageText" xml:space="preserve">
+    <value>Application settings were changed.
+To take effect application need to be restart.</value>
+  </data>
+  <data name="ApplicationSaveSettingsErrorMessageTitle" xml:space="preserve">
+    <value>Error saving settings</value>
+  </data>
+  <data name="ApplicationSaveSettingsErrorMessageText" xml:space="preserve">
+    <value>Error during save of application settings.
+Please, try again.</value>
+  </data>
 </root>

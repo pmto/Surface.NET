@@ -70,6 +70,44 @@ namespace SurfaceDesktop.Resources.Localization {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Application settings were changed.
+        ///To take effect application need to be restart..
+        /// </summary>
+        public static string ApplicationRestartMessageText {
+            get {
+                return ResourceManager.GetString("ApplicationRestartMessageText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Application settings.
+        /// </summary>
+        public static string ApplicationRestartMessageTitle {
+            get {
+                return ResourceManager.GetString("ApplicationRestartMessageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Error during save of application settings.
+        ///Please, try again..
+        /// </summary>
+        public static string ApplicationSaveSettingsErrorMessageText {
+            get {
+                return ResourceManager.GetString("ApplicationSaveSettingsErrorMessageText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Error saving settings.
+        /// </summary>
+        public static string ApplicationSaveSettingsErrorMessageTitle {
+            get {
+                return ResourceManager.GetString("ApplicationSaveSettingsErrorMessageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на settings.
         /// </summary>
         public static string SettingsButtonContent {

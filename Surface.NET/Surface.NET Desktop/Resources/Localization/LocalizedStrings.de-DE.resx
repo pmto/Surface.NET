@@ -122,4 +122,10 @@ Bitte versuchen Sie es erneut.!</value>
   <data name="SettingsFlyoutAppearanceHeader" xml:space="preserve">
     <value>Darstellung</value>
   </data>
+  <data name="LanguageSelectorLabel" xml:space="preserve">
+    <value>Sprache</value>
+  </data>
+  <data name="FlyoutThemeSelectorLabel" xml:space="preserve">
+    <value>Panel Thema!</value>
+  </data>
 </root>

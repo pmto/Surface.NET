@@ -122,4 +122,10 @@
   <data name="SettingsFlyoutAppearanceHeader" xml:space="preserve">
     <value>Зовнішній вигляд</value>
   </data>
+  <data name="LanguageSelectorLabel" xml:space="preserve">
+    <value>Мова</value>
+  </data>
+  <data name="FlyoutThemeSelectorLabel" xml:space="preserve">
+    <value>Тема</value>
+  </data>
 </root>

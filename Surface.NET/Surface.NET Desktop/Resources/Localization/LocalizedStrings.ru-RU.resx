@@ -123,4 +123,10 @@
   <data name="SettingsFlyoutAppearanceHeader" xml:space="preserve">
     <value>Внешний вид</value>
   </data>
+  <data name="LanguageSelectorLabel" xml:space="preserve">
+    <value>Язык</value>
+  </data>
+  <data name="FlyoutThemeSelectorLabel" xml:space="preserve">
+    <value>Тема панели</value>
+  </data>
 </root>

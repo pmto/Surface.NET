@@ -122,4 +122,10 @@
   <data name="SettingsFlyoutAppearanceHeader" xml:space="preserve">
     <value>모양</value>
   </data>
+  <data name="LanguageSelectorLabel" xml:space="preserve">
+    <value>언어</value>
+  </data>
+  <data name="FlyoutThemeSelectorLabel" xml:space="preserve">
+    <value>테마</value>
+  </data>
 </root>

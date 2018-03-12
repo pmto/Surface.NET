@@ -123,4 +123,10 @@ Please, try again.</value>
   <data name="SettingsFlyoutAppearanceHeader" xml:space="preserve">
     <value>Appearance</value>
   </data>
+  <data name="LanguageSelectorLabel" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="FlyoutThemeSelectorLabel" xml:space="preserve">
+    <value>Panel theme</value>
+  </data>
 </root>

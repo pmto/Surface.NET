@@ -117,6 +117,15 @@ namespace SurfaceDesktop.Resources.Localization {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Appearance.
+        /// </summary>
+        public static string SettingsFlyoutAppearanceHeader {
+            get {
+                return ResourceManager.GetString("SettingsFlyoutAppearanceHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Settings.
         /// </summary>
         public static string SettingsFlyoutHeader {

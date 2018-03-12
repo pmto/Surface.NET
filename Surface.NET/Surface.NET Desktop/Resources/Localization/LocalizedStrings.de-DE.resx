@@ -119,4 +119,7 @@
     <value>Fehler beim Speichern von Anwendungseinstellungen.
 Bitte versuchen Sie es erneut.!</value>
   </data>
+  <data name="SettingsFlyoutAppearanceHeader" xml:space="preserve">
+    <value>Darstellung</value>
+  </data>
 </root>

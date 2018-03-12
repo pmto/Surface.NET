@@ -119,4 +119,7 @@
     <value>Помилка під час збереження застосування настройок.
 Будь ласка, спробуйте ще раз.!</value>
   </data>
+  <data name="SettingsFlyoutAppearanceHeader" xml:space="preserve">
+    <value>Зовнішній вигляд</value>
+  </data>
 </root>

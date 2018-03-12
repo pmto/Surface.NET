@@ -119,4 +119,7 @@
     <value>응용 프로그램 설정이 변경되었습니다.
 변경 사항을 적용하려면 응용 프로그램을 다시 시작해야합니다.</value>
   </data>
+  <data name="SettingsFlyoutAppearanceHeader" xml:space="preserve">
+    <value>모양</value>
+  </data>
 </root>

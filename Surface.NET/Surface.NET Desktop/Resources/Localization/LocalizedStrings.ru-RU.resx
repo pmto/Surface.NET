@@ -120,4 +120,7 @@
     <value>Ошибка при сохранении настроек программы.
 Пожалуйста, повторите.</value>
   </data>
+  <data name="SettingsFlyoutAppearanceHeader" xml:space="preserve">
+    <value>Внешний вид</value>
+  </data>
 </root>

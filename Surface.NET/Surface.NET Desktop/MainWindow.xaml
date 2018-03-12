@@ -12,7 +12,9 @@
     x:Name="MetroWindow"
     Title="Surface.NET"
     Height="{Binding Source={x:Static props:Settings.Default}, Path=MainWindowHeight, Mode=TwoWay}"
-    Width="{Binding Source={x:Static props:Settings.Default}, Path=MainWindowWidth, Mode=TwoWay}">
+    Width="{Binding Source={x:Static props:Settings.Default}, Path=MainWindowWidth, Mode=TwoWay}"
+    WindowState="{Binding Source={x:Static props:Settings.Default}, Path=MainWindowState, Mode=TwoWay}"
+>
 
     <!-- Title bar buttons -->
     <controls:MetroWindow.RightWindowCommands>

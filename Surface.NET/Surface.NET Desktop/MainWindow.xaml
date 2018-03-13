@@ -29,31 +29,32 @@
     </controls:MetroWindow.RightWindowCommands>
 
     <!-- Window flyouts -->
-    <controls:FlyoutsControl>
-        <!-- Application settings flyout -->
-        <controls:Flyout 
+    <controls:MetroWindow.Flyouts>
+        <controls:FlyoutsControl>
+            <!-- Application settings flyout -->
+            <controls:Flyout 
             x:Name="SettingsFlyout" 
             Header="{x:Static localization:LocalizedStrings.SettingsFlyoutHeader}" 
             Position="Right"
             Width="250"
             Theme="{Binding Source={x:Static props:Settings.Default}, Path=FlyoutsTheme, Mode=TwoWay}"
         >
-            <!-- Container -->
-            <Grid Margin="10 10 10 10">
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition Height="28px"/>
-                </Grid.RowDefinitions>
-                <!-- Body -->
-                <StackPanel Grid.Row="0" Orientation="Vertical">
-                    <!-- Appearance settings section header -->
-                    <TextBlock Text="{x:Static localization:LocalizedStrings.SettingsFlyoutAppearanceHeader}" FontSize="18"/>
-                    <!-- Container -->
-                    <StackPanel Orientation="Horizontal">
-                        <!-- Language selector label -->
-                        <TextBlock Text="{x:Static localization:LocalizedStrings.LanguageSelectorLabel}" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-                        <!-- Language selector -->
-                        <controls:SplitButton
+                <!-- Container -->
+                <Grid Margin="10 10 10 10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="28px"/>
+                    </Grid.RowDefinitions>
+                    <!-- Body -->
+                    <StackPanel Grid.Row="0" Orientation="Vertical">
+                        <!-- Appearance settings section header -->
+                        <TextBlock Text="{x:Static localization:LocalizedStrings.SettingsFlyoutAppearanceHeader}" FontSize="18"/>
+                        <!-- Container -->
+                        <StackPanel Orientation="Horizontal">
+                            <!-- Language selector label -->
+                            <TextBlock Text="{x:Static localization:LocalizedStrings.LanguageSelectorLabel}" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                            <!-- Language selector -->
+                            <controls:SplitButton
                             x:Name="LanguageSplitButton"
                             ItemsSource="{Binding ElementName=MetroWindow, Path=LocalesDictionary}"
                             DisplayMemberPath="Key"
@@ -62,18 +63,18 @@
                             BorderThickness="0"
                             SelectionChanged="LanguageSplitButton_OnSelectionChanged"
                         />
-                        <!-- Flyout theme selector -->
-                        <controls:SplitButton
+                            <!-- Flyout theme selector -->
+                            <controls:SplitButton
                             ItemsSource="{Binding ElementName=MetroWindow, Path=FlyoutThemes}"
                             SelectedItem="{Binding Source={x:Static props:Settings.Default}, Path=FlyoutsTheme, Mode=TwoWay}"
                             HorizontalContentAlignment="Left"
                             Margin="10 0 0 0"
                             BorderThickness="0"
                         />
-                    </StackPanel>
-                    <StackPanel Orientation="Horizontal">
-                        <!-- Theme selector -->
-                        <controls:ToggleSwitch
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <!-- Theme selector -->
+                            <controls:ToggleSwitch
                             x:Name="ThemeToggleSwitch"
                             Header="{x:Static localization:LocalizedStrings.ThemeSelectorLabel}"
                             OnLabel="{x:Static localization:LocalizedStrings.ThemeToggleSwitchOn}"
@@ -81,19 +82,25 @@
                             IsChecked="{Binding Source={x:Static props:Settings.Default}, Path=ApplicationDarkTheme, Mode=TwoWay}"
                             VerticalAlignment="Bottom"
                         />
+                        </StackPanel>
                     </StackPanel>
-                </StackPanel>
-                <!-- Footer -->
-                <StackPanel Grid.Row="1" Orientation="Horizontal">
-                    <!-- About program button -->
-                    <Button 
+                    <!-- Footer -->
+                    <StackPanel Grid.Row="1" Orientation="Horizontal">
+                        <!-- About program button -->
+                        <Button 
                         x:Name="AboutProgramButton" 
                         Content="{x:Static localization:LocalizedStrings.AboutProgramButtonContent}"
                         Style="{DynamicResource SquareButtonStyle}"
                     />
-                </StackPanel>
-            </Grid>
-        </controls:Flyout>
-    </controls:FlyoutsControl>
+                    </StackPanel>
+                </Grid>
+            </controls:Flyout>
+        </controls:FlyoutsControl>
+    </controls:MetroWindow.Flyouts>
+
+    <!-- Container -->
+    <Grid>
+        <Frame x:Name="ContentFrame"/>
+    </Grid>
 
 </controls:MetroWindow>

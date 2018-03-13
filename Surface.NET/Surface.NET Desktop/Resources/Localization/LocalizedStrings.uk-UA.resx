@@ -134,4 +134,28 @@
   <data name="ThemeToggleSwitchOff" xml:space="preserve">
     <value>Світлий</value>
   </data>
+  <data name="AboutPageTitle" xml:space="preserve">
+    <value>програми</value>
+  </data>
+  <data name="AboutPageProgramTitle" xml:space="preserve">
+    <value>Програма</value>
+  </data>
+  <data name="AboutPageCompanyTitle" xml:space="preserve">
+    <value>Компанія</value>
+  </data>
+  <data name="AboutPageProductTitle" xml:space="preserve">
+    <value>Продукт</value>
+  </data>
+  <data name="AboutPageCopyrightTitle" xml:space="preserve">
+    <value>Авторське право</value>
+  </data>
+  <data name="AboutPageTrademarkTitle" xml:space="preserve">
+    <value>Торгова марка</value>
+  </data>
+  <data name="AboutPageVersionTitle" xml:space="preserve">
+    <value> версія</value>
+  </data>
+  <data name="AboutPageDescription" xml:space="preserve">
+    <value>Програма для креслення графічних 2D та 3D поверхонь від невідсортованого хмара точок, використовуючи сучасні графічні інтерфейси API.!</value>
+  </data>
 </root>

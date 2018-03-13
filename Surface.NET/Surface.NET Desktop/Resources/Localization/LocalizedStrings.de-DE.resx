@@ -134,4 +134,28 @@ Bitte versuchen Sie es erneut.!</value>
   <data name="ThemeToggleSwitchOff" xml:space="preserve">
     <value>Dünn</value>
   </data>
+  <data name="AboutPageTitle" xml:space="preserve">
+    <value>Über das Programm</value>
+  </data>
+  <data name="AboutPageProgramTitle" xml:space="preserve">
+    <value>Programm</value>
+  </data>
+  <data name="AboutPageCompanyTitle" xml:space="preserve">
+    <value>Firma:</value>
+  </data>
+  <data name="AboutPageProductTitle" xml:space="preserve">
+    <value>Produkt</value>
+  </data>
+  <data name="AboutPageCopyrightTitle" xml:space="preserve">
+    <value>Copyright</value>
+  </data>
+  <data name="AboutPageTrademarkTitle" xml:space="preserve">
+    <value>Marke</value>
+  </data>
+  <data name="AboutPageVersionTitle" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="AboutPageDescription" xml:space="preserve">
+    <value>Ein Programm zum Plotten von grafischen 2D- und 3D-Oberflächen aus unsortierten Punktwolken mit modernen grafischen APIs.!</value>
+  </data>
 </root>

@@ -91,7 +91,8 @@
                         x:Name="AboutProgramButton" 
                         Content="{x:Static localization:LocalizedStrings.AboutProgramButtonContent}"
                         Style="{DynamicResource SquareButtonStyle}"
-                    />
+                            Click="AboutProgramButton_OnClick"
+                        />
                     </StackPanel>
                 </Grid>
             </controls:Flyout>

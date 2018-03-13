@@ -22,7 +22,7 @@ namespace SurfaceDesktop.Pages
     {
         public AboutPage()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
     }
 }

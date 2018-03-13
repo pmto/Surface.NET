@@ -135,4 +135,28 @@
   <data name="ThemeToggleSwitchOff" xml:space="preserve">
     <value>Светлая</value>
   </data>
+  <data name="AboutPageTitle" xml:space="preserve">
+    <value>О программе</value>
+  </data>
+  <data name="AboutPageProgramTitle" xml:space="preserve">
+    <value>Программа:</value>
+  </data>
+  <data name="AboutPageCompanyTitle" xml:space="preserve">
+    <value>Разработчик:</value>
+  </data>
+  <data name="AboutPageProductTitle" xml:space="preserve">
+    <value>Продукт:</value>
+  </data>
+  <data name="AboutPageCopyrightTitle" xml:space="preserve">
+    <value>Копирайт:</value>
+  </data>
+  <data name="AboutPageTrademarkTitle" xml:space="preserve">
+    <value>Товарный знак:</value>
+  </data>
+  <data name="AboutPageVersionTitle" xml:space="preserve">
+    <value>Версия:</value>
+  </data>
+  <data name="AboutPageDescription" xml:space="preserve">
+    <value>Программа для построения графический поверхностей двухмерного и трёхмерного вида из не сортированного облака точек, используя современные графические библиотеки.</value>
+  </data>
 </root>

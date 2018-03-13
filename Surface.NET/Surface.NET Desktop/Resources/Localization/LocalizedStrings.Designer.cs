@@ -61,6 +61,78 @@ namespace SurfaceDesktop.Resources.Localization {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Company:.
+        /// </summary>
+        public static string AboutPageCompanyTitle {
+            get {
+                return ResourceManager.GetString("AboutPageCompanyTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Copyright:.
+        /// </summary>
+        public static string AboutPageCopyrightTitle {
+            get {
+                return ResourceManager.GetString("AboutPageCopyrightTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на A program for plotting graphical 2D and 3D surfaces from unsorted cloud of points using modern graphical APIs..
+        /// </summary>
+        public static string AboutPageDescription {
+            get {
+                return ResourceManager.GetString("AboutPageDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Product:.
+        /// </summary>
+        public static string AboutPageProductTitle {
+            get {
+                return ResourceManager.GetString("AboutPageProductTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Program:.
+        /// </summary>
+        public static string AboutPageProgramTitle {
+            get {
+                return ResourceManager.GetString("AboutPageProgramTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на About program.
+        /// </summary>
+        public static string AboutPageTitle {
+            get {
+                return ResourceManager.GetString("AboutPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Trademark:.
+        /// </summary>
+        public static string AboutPageTrademarkTitle {
+            get {
+                return ResourceManager.GetString("AboutPageTrademarkTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Version:.
+        /// </summary>
+        public static string AboutPageVersionTitle {
+            get {
+                return ResourceManager.GetString("AboutPageVersionTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на About program.
         /// </summary>
         public static string AboutProgramButtonContent {

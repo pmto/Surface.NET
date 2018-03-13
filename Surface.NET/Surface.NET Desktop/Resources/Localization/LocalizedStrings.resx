@@ -135,4 +135,28 @@ Please, try again.</value>
   <data name="ThemeToggleSwitchOff" xml:space="preserve">
     <value>Light</value>
   </data>
+  <data name="AboutPageTitle" xml:space="preserve">
+    <value>About program</value>
+  </data>
+  <data name="AboutPageProgramTitle" xml:space="preserve">
+    <value>Program:</value>
+  </data>
+  <data name="AboutPageCompanyTitle" xml:space="preserve">
+    <value>Company:</value>
+  </data>
+  <data name="AboutPageProductTitle" xml:space="preserve">
+    <value>Product:</value>
+  </data>
+  <data name="AboutPageCopyrightTitle" xml:space="preserve">
+    <value>Copyright:</value>
+  </data>
+  <data name="AboutPageTrademarkTitle" xml:space="preserve">
+    <value>Trademark:</value>
+  </data>
+  <data name="AboutPageVersionTitle" xml:space="preserve">
+    <value>Version:</value>
+  </data>
+  <data name="AboutPageDescription" xml:space="preserve">
+    <value>A program for plotting graphical 2D and 3D surfaces from unsorted cloud of points using modern graphical APIs.</value>
+  </data>
 </root>

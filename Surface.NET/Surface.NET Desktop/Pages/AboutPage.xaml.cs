@@ -38,9 +38,7 @@ namespace SurfaceDesktop.Pages {
                 ((AssemblyTrademarkAttribute) application.GetCustomAttributes(typeof(AssemblyTrademarkAttribute), false)
                     [0])
                 .Trademark;
-            this.VersionTextBox.Text =
-                ((AssemblyVersionAttribute) application.GetCustomAttributes(typeof(AssemblyVersionAttribute), false)[0])
-                .Version;
+            this.VersionTextBox.Text = application.GetName().Version.ToString();
         }
     }
 }

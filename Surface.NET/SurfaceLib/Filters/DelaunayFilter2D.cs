@@ -46,7 +46,7 @@ namespace SurfaceLib.Filters {
         /// <returns>
         ///     A list of Delaunay-triangles.
         /// </returns>
-        public IList<Triangle> Triangulate(IList<Point3D> triangulationPoints) {
+        public IList<Triangle> Triangulate(ref IList<Point3D> triangulationPoints) {
             if (triangulationPoints.Count < 3)
                 throw new ArgumentException("Can not triangulate less than three vertices!");
 
@@ -57,7 +57,7 @@ namespace SurfaceLib.Filters {
              * The "supertriangle" which encompasses all triangulation points.
              * This triangle initializes the algorithm and will be removed later.
              */
-            var superTriangle = SuperTriangle(triangulationPoints);
+            var superTriangle = SuperTriangle(ref triangulationPoints);
             triangles.Add(superTriangle);
 
             /*
@@ -122,7 +122,7 @@ namespace SurfaceLib.Filters {
         /// <returns>
         ///     Returns a triangle that encompasses all triangulation points.
         /// </returns>
-        private static Triangle SuperTriangle(IList<Point3D> triangulationPoints) {
+        private static Triangle SuperTriangle(ref IList<Point3D> triangulationPoints) {
             var m = triangulationPoints[0].XAxis;
 
             // Get the extremal x and y coordinates

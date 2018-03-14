@@ -101,7 +101,11 @@
 
     <!-- Container -->
     <Grid>
+        <!-- Main window content frame -->
         <Frame x:Name="ContentFrame"/>
+        
+        <!-- Progress ring -->
+        <controls:ProgressRing IsActive="{Binding ElementName=MetroWindow, Path=IsActiveWork}"/>
     </Grid>
 
 </controls:MetroWindow>

@@ -77,6 +77,11 @@ namespace SurfaceDesktop {
         /// </summary>
         public ObservableCollection<FlyoutTheme> FlyoutThemes { get; set; }
 
+        /// <summary>
+        ///     Keeps true if any of work are running.
+        /// </summary>
+        public bool IsActiveWork { get; set; } = false;
+
         #endregion
 
         #region events

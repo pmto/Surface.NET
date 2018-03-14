@@ -37,6 +37,8 @@ namespace SurfaceLib.Filters {
     ///     Uses an enhanced incircle-predicate for counterclockwise orientated triangles.
     /// </remarks>
     public class DelaunayFilter2D {
+        #region methods
+
         /// <summary>
         ///     Performs the 2D Delaunay triangulation on a set of n vertices in O(n**2) time.
         /// </summary>
@@ -140,5 +142,7 @@ namespace SurfaceLib.Filters {
 
             return new Triangle(sp1, sp2, sp3);
         }
+
+        #endregion
     }
 }

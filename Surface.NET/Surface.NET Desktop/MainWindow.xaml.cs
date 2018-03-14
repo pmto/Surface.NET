@@ -7,6 +7,7 @@ using System.Linq;
 using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Navigation;
 using MahApps.Metro.Controls;
 using MahApps.Metro.Controls.Dialogs;
 using SurfaceDesktop.Properties;
@@ -76,6 +77,11 @@ namespace SurfaceDesktop {
         ///     Contains flyout themes variations.
         /// </summary>
         public ObservableCollection<FlyoutTheme> FlyoutThemes { get; set; }
+
+        /// <summary>
+        ///     Keeps true if any of work are running.
+        /// </summary>
+        public bool IsActiveWork { get; set; } = false;
 
         #endregion
 
@@ -148,6 +154,24 @@ namespace SurfaceDesktop {
 
         private void AboutProgramButton_OnClick(object sender, RoutedEventArgs e) {
             this.ContentFrame.Navigate(new Pages.AboutPage());
+        }
+
+        /// <summary>
+        ///     Rises when frame started loading page.
+        ///     And sets <see cref="IsActiveWork"/> property to <see cref="Boolean.True"/>.
+        /// </summary>
+        private void ContentFrame_OnNavigating(object sender, NavigatingCancelEventArgs e) {
+            // Navigation on progress
+            this.IsActiveWork = true;
+        }
+
+        /// <summary>
+        ///     Rises when frame stoped loading page.
+        ///     And sets <see cref="IsActiveWork"/> property to <see cref="Boolean.False"/>.
+        /// </summary>
+        private void ContentFrame_OnNavigated(object sender, NavigationEventArgs e) {
+            // Navigation completed or stoped
+            this.IsActiveWork = false;
         }
     }
 }

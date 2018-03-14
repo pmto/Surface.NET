@@ -102,7 +102,7 @@
     <!-- Container -->
     <Grid>
         <!-- Main window content frame -->
-        <Frame x:Name="ContentFrame"/>
+        <Frame x:Name="ContentFrame" Navigating="ContentFrame_OnNavigating" Navigated="ContentFrame_OnNavigated"/>
         
         <!-- Progress ring -->
         <controls:ProgressRing IsActive="{Binding ElementName=MetroWindow, Path=IsActiveWork}"/>
